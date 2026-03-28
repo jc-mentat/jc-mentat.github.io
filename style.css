@@ -1,0 +1,14 @@
+:root { --bg: #fff; --text: #000; --accent: #007acc; }
+[data-theme="dark"] { --bg: #1a1a1a; --text: #fff; --accent: #4da6ff; }
+body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem 1rem; background: var(--bg); color: var(--text); line-height: 1.6; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; }
+h1 { margin: 0; font-size: 2.5rem; }
+h2 { border-bottom: 2px solid var(--accent); padding-bottom: 0.5rem; margin-top: 3rem; }
+ul { list-style: none; padding: 0; }
+li { margin: 1rem 0; padding-left: 1.5rem; position: relative; }
+li:before { content: "→"; position: absolute; left: 0; color: var(--accent); font-weight: bold; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button { background: none; border: 1px solid var(--accent); padding: 0.5rem 1rem; cursor: pointer; border-radius: 4px; font-size: 1rem; color: var(--accent); }
+button:hover { background: var(--accent); color: var(--bg); }
+@media (max-width: 600px) { body { padding: 1rem; } h1 { font-size: 2rem; } }
