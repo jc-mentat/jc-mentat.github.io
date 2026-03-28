@@ -1,5 +1,6 @@
-:root { --bg: #fff; --text: #000; --accent: #007acc; }
-[data-theme="dark"] { --bg: #1a1a1a; --text: #fff; --accent: #4da6ff; }
+:root { --bg: rgba(255,255,255,0.1); --text: #000; --accent: #007acc; --glass: rgba(255,255,255,0.9); }
+[data-theme="dark"] { --bg: rgba(26,26,26,0.9); --text: #fff; --accent: #4da6ff; --glass: rgba(0,0,0,0.8); }
+body { background: url('atl-bg.jpg') center/cover fixed no-repeat; font-family: system-ui, sans-serif; }
 body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem 1rem; background: var(--bg); color: var(--text); line-height: 1.6; }
 header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3rem; }
 h1 { margin: 0; font-size: 2.5rem; }
